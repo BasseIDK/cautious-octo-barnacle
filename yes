@@ -2,6 +2,17 @@ if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EatSimGui") then
 game.Players.LocalPlayer.PlayerGui.EatSimGui:Destroy()
 end
 
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
 local EatSimGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -255,7 +266,7 @@ TextButton_5.TextWrapped = true
 
 -- Scripts
 
-local function ATLRRFI_fake_script() -- EatSimGui.MainScript 
+local function HDYTX_fake_script() -- EatSimGui.MainScript 
 	local script = Instance.new('LocalScript', EatSimGui)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -389,6 +400,13 @@ local function ATLRRFI_fake_script() -- EatSimGui.MainScript
 				if Activated.AutoFarmCover then
 					script.Parent.AutoFarmCover.Visible = true
 				end
+				if Activated.EatSounds == true then
+					for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
+						if v.Name == "Eat" then
+							v:Destroy()
+						end
+					end
+				end
 			end
 			if not Activated.AutoFarmCover then
 				script.Parent.AutoFarmCover.Visible = false
@@ -403,14 +421,6 @@ local function ATLRRFI_fake_script() -- EatSimGui.MainScript
 			playAnim = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(RollingAnim)
 			playAnim:Play()
 		end
-		
-		game.Players.LocalPlayer.Character.HumanoidRootPart.ChildAdded:Connect(function(Child)
-			if Activated.EatSounds == true then
-				if Child.Name == "Eat" then
-					Child:Destroy()
-				end
-			end
-		end)
 	end)
 	
 	script.Parent.AutoFarmCover.TextButton.MouseButton1Click:Connect(function()
@@ -419,4 +429,4 @@ local function ATLRRFI_fake_script() -- EatSimGui.MainScript
 		MainFrame.ScrollingFrame.AutoFarmCover.TextButton.Text = "Off"
 	end)
 end
-coroutine.wrap(ATLRRFI_fake_script)()
+coroutine.wrap(HDYTX_fake_script)()
