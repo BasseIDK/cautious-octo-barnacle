@@ -1,0 +1,422 @@
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("EatSimGui") then
+game.Players.LocalPlayer.PlayerGui.EatSimGui:Destroy()
+end
+
+local EatSimGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local AutoFarm = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local AutoFarmCover = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local EatSounds = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Rolling = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local DragFrame = Instance.new("Frame")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local AutoFarmCover_2 = Instance.new("Frame")
+local TextButton_5 = Instance.new("TextButton")
+
+-- Properties
+
+EatSimGui.Name = "EatSimGui"
+EatSimGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+EatSimGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+EatSimGui.ResetOnSpawn = false
+
+Frame.Parent = EatSimGui
+Frame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.720333457, 0, 0.185463607, 0)
+Frame.Size = UDim2.new(0.255227834, 0, 0.627569079, 0)
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0301583149, 0, 0.145766705, 0)
+ScrollingFrame.Size = UDim2.new(0.939934194, 0, 0.83266747, 0)
+ScrollingFrame.ScrollBarThickness = 0
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = ScrollingFrame
+AutoFarm.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+AutoFarm.BorderColor3 = Color3.new(0, 0, 0)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Position = UDim2.new(0, 0, -7.31836423e-08, 0)
+AutoFarm.Size = UDim2.new(0, 374, 0, 60)
+
+TextLabel.Parent = AutoFarm
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0171113852, 0, 0.0943046436, 0)
+TextLabel.Size = UDim2.new(0.795186877, 0, 0.806666493, 0)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "AutoFarm"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = AutoFarm
+TextButton.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.812298298, 0, 0.115533501, 0)
+TextButton.Size = UDim2.new(0.158289939, 0, 0.759220183, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Off"
+TextButton.TextColor3 = Color3.new(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = AutoFarm
+UIAspectRatioConstraint.AspectRatio = 6.233333110809326
+UIAspectRatioConstraint.AspectType = Enum.AspectType.ScaleWithParentSize
+
+UIAspectRatioConstraint_2.Parent = ScrollingFrame
+UIAspectRatioConstraint_2.AspectRatio = 0.8968824744224548
+UIAspectRatioConstraint_2.AspectType = Enum.AspectType.ScaleWithParentSize
+
+AutoFarmCover.Name = "AutoFarmCover"
+AutoFarmCover.Parent = ScrollingFrame
+AutoFarmCover.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+AutoFarmCover.BorderColor3 = Color3.new(0, 0, 0)
+AutoFarmCover.BorderSizePixel = 0
+AutoFarmCover.Position = UDim2.new(0, 0, 0.155875221, 0)
+AutoFarmCover.Size = UDim2.new(0, 374, 0, 40)
+
+TextLabel_2.Parent = AutoFarmCover
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0171113852, 0, 0.0943046436, 0)
+TextLabel_2.Size = UDim2.new(0.795186877, 0, 0.806666493, 0)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Cover Screen During AutoFarm"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+
+TextButton_2.Parent = AutoFarmCover
+TextButton_2.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.847057641, 0, 0.115533449, 0)
+TextButton_2.Size = UDim2.new(0.123530574, 0, 0.759220183, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Off"
+TextButton_2.TextColor3 = Color3.new(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14
+TextButton_2.TextWrapped = true
+
+UIAspectRatioConstraint_3.Parent = AutoFarmCover
+UIAspectRatioConstraint_3.AspectRatio = 9.350000381469727
+UIAspectRatioConstraint_3.AspectType = Enum.AspectType.ScaleWithParentSize
+
+EatSounds.Name = "EatSounds"
+EatSounds.Parent = ScrollingFrame
+EatSounds.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+EatSounds.BorderColor3 = Color3.new(0, 0, 0)
+EatSounds.BorderSizePixel = 0
+EatSounds.Position = UDim2.new(0, 0, 0.155875221, 0)
+EatSounds.Size = UDim2.new(0, 374, 0, 40)
+
+TextLabel_3.Parent = EatSounds
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0171113852, 0, 0.0943046436, 0)
+TextLabel_3.Size = UDim2.new(0.795186877, 0, 0.806666493, 0)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "Disable Eating Sounds"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_3.Parent = EatSounds
+TextButton_3.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.847057641, 0, 0.115533449, 0)
+TextButton_3.Size = UDim2.new(0.123530574, 0, 0.759220183, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Off"
+TextButton_3.TextColor3 = Color3.new(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14
+TextButton_3.TextWrapped = true
+
+UIAspectRatioConstraint_4.Parent = EatSounds
+UIAspectRatioConstraint_4.AspectRatio = 9.350000381469727
+UIAspectRatioConstraint_4.AspectType = Enum.AspectType.ScaleWithParentSize
+
+Rolling.Name = "Rolling"
+Rolling.Parent = ScrollingFrame
+Rolling.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Rolling.BorderColor3 = Color3.new(0, 0, 0)
+Rolling.BorderSizePixel = 0
+Rolling.Position = UDim2.new(0, 0, -7.31836423e-08, 0)
+Rolling.Size = UDim2.new(0, 374, 0, 60)
+
+TextLabel_4.Parent = Rolling
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0171113852, 0, 0.0943046436, 0)
+TextLabel_4.Size = UDim2.new(0.795186877, 0, 0.806666493, 0)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "Rolling"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_4.Parent = Rolling
+TextButton_4.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.812298298, 0, 0.115533501, 0)
+TextButton_4.Size = UDim2.new(0.158289939, 0, 0.759220183, 0)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Off"
+TextButton_4.TextColor3 = Color3.new(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14
+TextButton_4.TextWrapped = true
+
+UIAspectRatioConstraint_5.Parent = Rolling
+UIAspectRatioConstraint_5.AspectRatio = 6.233333110809326
+UIAspectRatioConstraint_5.AspectType = Enum.AspectType.ScaleWithParentSize
+
+DragFrame.Name = "DragFrame"
+DragFrame.Parent = Frame
+DragFrame.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+DragFrame.BorderColor3 = Color3.new(0, 0, 0)
+DragFrame.BorderSizePixel = 0
+DragFrame.Position = UDim2.new(-9.2035873e-07, 0, 0, 0)
+DragFrame.Size = UDim2.new(1, 0, 0.127795488, 0)
+
+UIAspectRatioConstraint_6.Parent = Frame
+UIAspectRatioConstraint_6.AspectRatio = 0.7945289611816406
+
+AutoFarmCover_2.Name = "AutoFarmCover"
+AutoFarmCover_2.Parent = EatSimGui
+AutoFarmCover_2.BackgroundColor3 = Color3.new(0, 0, 0)
+AutoFarmCover_2.BorderColor3 = Color3.new(0, 0, 0)
+AutoFarmCover_2.BorderSizePixel = 0
+AutoFarmCover_2.Position = UDim2.new(0, 0, -0.5, 0)
+AutoFarmCover_2.Size = UDim2.new(1, 0, 1.5, 0)
+AutoFarmCover_2.Visible = false
+
+TextButton_5.Parent = AutoFarmCover_2
+TextButton_5.BackgroundColor3 = Color3.new(0.392157, 0.392157, 0.392157)
+TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.373636961, 0, 0.895989954, 0)
+TextButton_5.Size = UDim2.new(0.252084672, 0, 0.0676691756, 0)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Disable Cover"
+TextButton_5.TextColor3 = Color3.new(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14
+TextButton_5.TextWrapped = true
+
+-- Scripts
+
+local function ATLRRFI_fake_script() -- EatSimGui.MainScript 
+	local script = Instance.new('LocalScript', EatSimGui)
+
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local CoreGui = game:GetService("CoreGui")
+	
+	local MainFrame = script.Parent.Frame
+	local DragFrame = MainFrame.DragFrame
+	
+	local CanDrag = true
+	
+	local Dragging
+	local DragInput
+	local DragStart
+	local StartPos
+	
+	local Activated = {
+		AutoFarm = false,
+		AutoFarmCover = false,
+		EatSounds = false,
+		Rolling = false
+	}
+	
+	local RollingAnim = Instance.new("Animation")
+	RollingAnim.AnimationId = "rbxassetid://14531654819"
+	
+	local playAnim
+	
+	local function update(input)
+		local delta = input.Position - DragStart
+		local dragTime = 0.04
+		local SmoothDrag = {}
+		if CanDrag then
+			SmoothDrag.Position = UDim2.new(StartPos.X.Scale, StartPos.X.Offset + delta.X, StartPos.Y.Scale, StartPos.Y.Offset + delta.Y)
+			local dragSmoothFunction = TweenService:Create(MainFrame, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+			dragSmoothFunction:Play()
+		end
+	end
+	
+	DragFrame.InputBegan:Connect(function(Input)
+		if Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch then
+			Dragging = true
+			DragStart = Input.Position
+			StartPos = MainFrame.Position
+			Input.Changed:Connect(function()
+				if Input.UserInputState == Enum.UserInputState.End then
+					Dragging = false
+				end
+			end)
+		end
+	end)
+	DragFrame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and Dragging and MainFrame.Size then
+			update(input)
+		end
+	end)
+	
+	for i,v in pairs(MainFrame.ScrollingFrame:GetChildren()) do
+		if v:IsA("Frame") then
+			v.TextButton.MouseButton1Click:Connect(function()
+				if v.Name == "AutoFarm" then
+					if not Activated.AutoFarm then
+						Activated.AutoFarm = true
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+						v.TextButton.Text = "On"
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+					else
+						Activated.AutoFarm = false
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+						v.TextButton.Text = "Off"
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(167.510544, 346713.75, -292.525909, 0.0420858115, 7.91287369e-10, -0.999113977, -4.23205748e-10, 1, 7.74162345e-10, 0.999113977, 3.90249555e-10, 0.0420858115)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+					end
+				elseif v.Name == "AutoFarmCover" then
+					if not Activated.AutoFarmCover then
+						Activated.AutoFarmCover = true
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+						v.TextButton.Text = "On"
+					else
+						Activated.AutoFarmCover = false
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+						v.TextButton.Text = "Off"
+					end
+				elseif v.Name == "EatSounds" then
+					if not Activated.EatSounds then
+						Activated.EatSounds = true
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+						v.TextButton.Text = "On"
+					else
+						Activated.EatSounds = false
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+						v.TextButton.Text = "Off"
+					end
+				elseif v.Name == "Rolling" then
+					if not Activated.Rolling then
+						Activated.Rolling = true
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+						v.TextButton.Text = "On"
+						playAnim = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(RollingAnim)
+						playAnim:Play()
+					else
+						Activated.Rolling = false
+						v.TextButton.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+						v.TextButton.Text = "Off"
+						playAnim:Stop()
+					end
+				end
+			end)
+		end
+	end
+	
+	task.spawn(function()
+		while task.wait() do
+			if Activated.AutoFarm then
+				if workspace:FindFirstChild("GameObjects") then
+					local FoodsFolder = workspace.GameObjects:FindFirstChild("Foods")
+					if FoodsFolder then
+						local Foods = workspace.GameObjects.Foods:GetChildren()
+						local RandomFood = Foods[math.random(1, #Foods)]
+						if RandomFood:FindFirstChildWhichIsA("MeshPart") then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = RandomFood:FindFirstChildWhichIsA("MeshPart").CFrame
+						end
+					end
+				end
+				if Activated.AutoFarmCover then
+					script.Parent.AutoFarmCover.Visible = true
+				end
+			end
+			if not Activated.AutoFarmCover then
+				script.Parent.AutoFarmCover.Visible = false
+			end
+		end
+	end)
+	
+	game.Players.LocalPlayer.CharacterAdded:Connect(function()
+		if Activated.Rolling == true then
+			game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+			wait(0.1)
+			playAnim = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(RollingAnim)
+			playAnim:Play()
+		end
+		
+		game.Players.LocalPlayer.Character.HumanoidRootPart.ChildAdded:Connect(function(Child)
+			if Activated.EatSounds == true then
+				if Child.Name == "Eat" then
+					Child:Destroy()
+				end
+			end
+		end)
+	end)
+	
+	script.Parent.AutoFarmCover.TextButton.MouseButton1Click:Connect(function()
+		Activated.AutoFarmCover = false
+		MainFrame.ScrollingFrame.AutoFarmCover.TextButton.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+		MainFrame.ScrollingFrame.AutoFarmCover.TextButton.Text = "Off"
+	end)
+end
+coroutine.wrap(ATLRRFI_fake_script)()
